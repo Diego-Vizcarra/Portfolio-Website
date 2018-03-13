@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+/* Header CSS */
+header div>a>img{
+    width: 33%;
+}
+header img{
+    width: 100%;
+}
+header div>h1{
+    width: 50%;
+}
+/*
+header div ul li{
+    display: inline-block;
+}
+.menu-list{
+    display: block;
+}
+.list-content{
+    display:none;
+}
+.menu-list:hover .list-content{
+    display:block;
+    position: absolute;
+}
+*/
+
+/* Classes */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+.clear {
+    display: table;
+    content: "";
+    clear: both;
+}
