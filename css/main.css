@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Raleway');
 *{
     box-sizing: border-box;
+    font-family: "Raleway";
+}
+h1, h2, h3{
+    font-family: "EB Garamond";
 }
 /* Header CSS */
 header div>a>img{
