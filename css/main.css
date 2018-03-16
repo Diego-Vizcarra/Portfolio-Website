@@ -6,6 +6,11 @@
 h1, h2, h3{
     font-family: "EB Garamond";
 }
+/*
+body{
+    background-color: #00beff;
+}
+*/
 /* Header CSS */
 header div>a>img{
     width: 33%;
@@ -16,22 +21,6 @@ header img{
 header div>h1{
     width: 50%;
 }
-/*
-header div ul li{
-    display: inline-block;
-}
-.menu-list{
-    display: block;
-}
-.list-content{
-    display:none;
-}
-.menu-list:hover .list-content{
-    display:block;
-    position: absolute;
-}
-*/
-
 /* Classes */
 .flex {
     display: flex;
