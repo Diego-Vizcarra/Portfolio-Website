@@ -6,29 +6,92 @@
 h1, h2, h3{
     font-family: "EB Garamond";
 }
-/*
 body{
     background-color: #00beff;
+    margin: auto;
 }
-*/
+div{
+    background-color: white;
+}
+li a{
+    color: #cc4114;
+    text-decoration: none;
+    font-weight: bolder;
+}
 /* Header CSS */
+header{
+    background-color: #435799;
+    width: 100%;
+    margin: 0;
+}
 header div>a>img{
     width: 33%;
 }
 header img{
     width: 100%;
 }
+header div>nav>ul{
+    list-style: none;
+    display: inline-flex;
+    padding: 10px;
+    margin: 10px;
+}
+header nav>ul>li>a{
+    padding: 15px;
+}
+header li>a{
+    border: solid 1px #cc4114;
+}
+header div{
+    background-color: #435799;
+}
+header li>div>a{
+    border: solid 1px #cc4114;
+}
+header nav>ul>li>div>ul>li{
+    list-style: none;
+}
+header div>nav{
+    width: 100%;
+    text-align: center;
+}
+header ul>li>a{
+    margin-bottom: 15px;
+}
 header div>h1{
-    width: 50%;
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
 }
 /* Classes */
 .flex {
     display: flex;
-    justify-content: center;
-    align-content: space-around;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: center;
 }
-.clear {
-    display: table;
-    content: "";
-    clear: both;
+.menu-list{
+    display: block;
+    list-style: none;
+    position: relative;
+}
+.menu-list:hover .list-content{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.list-content>a{
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+.list-content>a:last-child{
+    padding-bottom: 10px;
+}
+.list-content{
+    display: none;
+    text-align: left;
+}
+.flex.three div {
+    width: 30%;
 }
