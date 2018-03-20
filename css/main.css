@@ -51,8 +51,11 @@ header li>div>a{
 header ul>li{
     display: inline-block;
 }
-header nav>ul>li>div>ul>li{
+header nav>ul>li>div>a{
     list-style: none;
+}
+header nav>ul>li>div>a{
+    margin-top: 4px;
 }
 header div>nav{
     width: 100%;
@@ -62,6 +65,21 @@ header div>h1{
     width: 100%;
     font-size: 4em;
     text-align: center;
+}
+/*index css*/
+#index main{
+    margin: auto;
+    width: 50%;
+}
+#index main section{
+    padding: 15px;
+}
+#index main section article{
+    padding: 15px;
+    background: white;
+}
+#index footer div{
+    min-height: 160px;
 }
 /* Classes */
 .flex {
