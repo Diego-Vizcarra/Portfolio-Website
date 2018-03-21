@@ -71,12 +71,12 @@ header div>h1{
     margin: auto;
     width: 50%;
 }
-#index main section{
-    padding: 15px;
-}
 #index main section article{
     padding: 15px;
     background: white;
+}
+#index footer{
+    
 }
 #index footer div{
     min-height: 160px;
@@ -84,7 +84,7 @@ header div>h1{
 /* Classes */
 .flex {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: space-between;
     align-items: center;
 }
