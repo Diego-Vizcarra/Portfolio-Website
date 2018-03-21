@@ -81,12 +81,53 @@ header div>h1{
 #index footer div{
     min-height: 160px;
 }
+/*Contact css*/
+#con main{
+    margin: auto;
+    width: 43.3%;
+}
+#con main section{
+    background: white;
+    padding: 1px 15px;
+}
+#con footer article, footer div{
+    width: 25%;
+    padding: 15px;
+}
+#con .flex1{
+    justify-content: space-around;
+    align-content: space-around;
+}
+#con footer article{
+    background: white;
+    min-height: 28.2vh;
+}
+/*Resumé css*/
+#res main, aside{
+    padding: 15px;
+}
+#res .flex2{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;;
+}
+#res .flex2 div{
+    width: 50%;
+}
+#res .flex2 section{
+    width: 50%;
+}
 /* Classes */
 .flex {
     display: flex;
     justify-content: flex-start;
     align-content: space-between;
     align-items: center;
+}
+.wrapper{
+    background: white;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 .menu-list{
     display: block;
