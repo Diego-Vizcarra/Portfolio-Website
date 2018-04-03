@@ -24,8 +24,16 @@ header{
     width: 100%;
     margin: 0;
 }
+header>div{
+    max-width: 1280px;
+    text-align: center;
+    margin: 0 auto;
+}
 header div>a>img{
     width: 33%;
+}
+header div.three div{
+    text-align: left;
 }
 header img{
     width: 100%;
@@ -37,6 +45,12 @@ header div>nav>ul{
 }
 header nav>ul>li>a{
     padding: 15px;
+}
+header nav>ul>li>a:hover{
+    background-color: rgba(91, 183, 211, 0.5);
+    color: rgb(71, 0, 142);
+    border: solid 1px rgb(91, 183, 211);
+    transition: .5s;
 }
 header li>a{
     border: solid 1px #00beff;
@@ -54,12 +68,18 @@ header ul>li{
 header nav>ul>li>div>a{
     list-style: none;
 }
+header nav>ul>li>div>a:hover{
+    background-color: rgba(91, 183, 211, 0.5);
+    color: rgb(71, 0, 142);
+    border: solid 1px rgb(91, 183, 211);
+    transition: .5s;
+}
 header nav>ul>li>div>a{
     margin-top: 4px;
 }
 header div>nav{
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
 header div>h1{
     width: 100%;
@@ -84,6 +104,12 @@ header div>h1{
 /*About Me css*/
 #am .wrapper{
     padding: 15px;
+}
+#am aside h3{
+    margin: auto;
+}
+#am div>div.flex{
+    align-items: stretch;
 }
 #am .flex1{
     width: 74%;
@@ -119,13 +145,18 @@ header div>h1{
 #res .flex2{
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;;
+    justify-content: space-around;
+    align-items: stretch;
 }
 #res .flex2 div{
     width: 50%;
 }
 #res .flex2 section{
     width: 50%;
+}
+#res h2{
+    width: 100%;
+    text-align: center;
 }
 /* Classes */
 .flex {
@@ -163,5 +194,5 @@ header div>h1{
     text-align: left;
 }
 .flex.three div {
-    width: 30%;
+    width: 33.333%;
 }
