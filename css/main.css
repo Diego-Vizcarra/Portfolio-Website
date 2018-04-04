@@ -91,6 +91,10 @@ header div>h1{
 #am .flex2{
     width: 24%;
 }
+/*Letters of Reccomendation css*/
+#lor main{
+    padding: 15px;
+}
 /*Contact css*/
 #con main{
     margin: auto;
