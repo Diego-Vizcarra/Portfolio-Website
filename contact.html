@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Diego Vizcarra's Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
 </head>
 <body id="con">
     <header>
@@ -67,30 +66,32 @@
             </article>
             <div>
                 <h3>Contact Form</h3>
-                <form onsubmit="return false;">
+                <form name="contact" onsubmit="return false;">
                     <label for="name">Name:</label>
                     <br>
-                    <input type="text" id="name" name="contactName" required>
+                    <input type="text" id="name" name="contactName">
                     <br>
                     <br>
                     <label for="phone">Phone Number:</label>
                     <br>
-                    <input type="text" id="phone" name="contactPhone" required>
+                    <input type="number" id="phone" name="contactPhone">
                     <br>
                     <br>
                     <label for="address">Email Address:</label>
                     <br>
-                    <input type="email" id="address" name="contactAddress" required>
+                    <input type="email" id="address" name="contactAddress">
                     <br>
                     <br>
                     <label for="message">Message:</label>
                     <br>
-                    <textarea name="contactMessage" id="message" cols="30" rows="5" required></textarea>
+                    <textarea name="contactMessage" id="message" cols="30" rows="5"></textarea>
                     <br>
-                    <button type="submit">Submit</button>
+                    <button type="submit" onclick="return formValidate();">Submit</button>
                 </form>
+                <p id="paragraph"></p>
             </div>
         </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
