@@ -32,6 +32,18 @@ header>div{
 header div>a>img{
     width: 33%;
 }
+/*
+header div>nav{
+    display: none;
+}
+header div>button{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 350px;
+    top: 60px;
+}
+*/
 header div.three div{
     text-align: left;
 }
