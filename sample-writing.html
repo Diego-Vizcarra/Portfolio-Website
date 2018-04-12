@@ -13,9 +13,10 @@
                 <a href="index.html"><img src="images/Logo.png" alt="DV"></a>
             </div>
             <div>
-                <h1>Home</h1>
+                <h1>Sample Writing</h1>
             </div>
-            <div>
+            <div id="me">
+                <button onclick="menuExpand();"><i class="fas fa-bars fa-4x"></i></button>
                 <nav>
                     <ul>
                         <li><a href="about-me.html">About Me</a></li>
@@ -28,7 +29,7 @@
                             <div class="list-content">
                                 <a href="web-projects.html">Web Projects</a>
                                 <a href="sample-writing.html">Samples of Writing</a>
-                                <a href="programming-skills.html">Programming Skills</a>
+                                <a href="programming-skills.html">Technical Skills</a>
                             </div>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
@@ -38,33 +39,41 @@
         </div>
     </header>
     <div class="wrapper">
-        <main>
-            <div>
-                <img src="images/ready-player-one-essay.PNG" alt="Ready Player One Example Essay">
+        <main id="slide">
+           <div id="one">
+                 <div class="previous"><button onclick="slideShowPrevious();">&laquo;</button></div>
+                <div>
+                    <img src="images/ready-player-one-essay.PNG" alt="Ready Player One Example Essay">
+                </div>
+                <div>
+                    <article>
+                        <h3>Ready Player One Essay</h3>
+                        <p>This is a brief excerpt from my essay about Ready Player One. In my CART English 11 class, we were tasked with producing an argumentative essay about why Ready Player One should be used more often in high schools. We were required to format the essay using MLA styling. The reason I selected the sample was that we were given only the time in class to finish it; in addition, it is one of my most recent works of writing making it much more relevant than older ones. </p>
+                    </article>
+                </div>
+                <div class="next"><button onclick="slideShowNext();">&raquo;</button></div>
             </div>
-            <div>
-                <article>
-                    <h3>Ready Player One Essay</h3>
-                    <p>This is a brief excerpt from my essay about Ready Player One. In my CART English 11 class, we were tasked with producing an argumentative essay about why Ready Player One should be used more often in high schools. We were required to format the essay using MLA styling. The reason I selected the sample was that we were given only the time in class to finish it; in addition, it is one of my most recent works of writing making it much more relevant than older ones. </p>
-                </article>
-            </div>
-            <div>
-                <img src="images/digital-ethics-research-essay.PNG" alt="Digital Ethics Essay">
-            </div>
-            <div>
+            <div id="two">
+              <div class="previous"><button onclick="slideShowPrevious();">&laquo;</button></div>
+               <div>
+                   <img src="images/digital-ethics-research-essay.PNG" alt="Digital Ethics Essay">
+               </div>
                 <article>
                     <h3>Digital Responsibility Research Essay</h3>
                     <p>Earlier this year in our CART English 11 class, we did a research essay on a variety of topics focusing on digital ethics. The sample seen is just an excerpt from the entire essay. The essay was formatted in MLA with a page number in the top right and works cited at the end. The reason why I selected this sample is that it shows my level of writing near the beginning of the year and can be cross-referenced with my later works to check how I have improved.</p>
                 </article>
+                <div class="next"><button onclick="slideShowNext();">&raquo;</button></div>
             </div>
-            <div>
-                <img src="http://via.placeholder.com/350x150" alt="">
-            </div>
-            <div>
+            <div id="three">
+               <div class="previous"><button onclick="slideShowPrevious();">&laquo;</button></div>
+                <div>
+                    <img src="images/seventh-man-essay.PNG" alt="Seventh Man Essay">
+                </div>
                 <article>
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus quibusdam amet a et qui, illo atque illum, ipsam, sit totam aut ea, in accusantium nesciunt quis blanditiis eius iure.</p>
+                    <h3>The Seventh Man</h3>
+                    <p>This essay is from my English 10 class and it is based on a story we were reading from our literature book. We were given the task of making a thesis and then writing an argumentative essay supporting that thesis. My class was required to write the essay in MLA format. This example is from my softmore year for reference as to how well I wrote back in 10th grade, since it being almost the end of my junior year it would be good to reflect on how much I have improved from then on.</p>
                 </article>
+                <div class="next"><button onclick="slideShowNext();">&raquo;</button></div>
             </div>
         </main>
     </div>

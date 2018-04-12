@@ -1,4 +1,7 @@
-var i = 0;
+// Javascript
+var con = 0;
+var n = 0;
+document.getElementById("slide").getElementsByTagName("div")[n].style.display = "block";
 function formValidate() {
     len = document.forms[0].length - 1;
     ele = document.forms[0].elements;
@@ -35,15 +38,60 @@ function checkEmail(){
     }
 }
 function menuExpand(){
-    if((i % 2) == 0){
+    if((con % 2) == 0){
        document.getElementById("me").getElementsByTagName("nav")[0].style.display = "contents";
         document.getElementById("me").getElementsByTagName("button")[0].style.top = "5px";
-        i++;
+        con++;
         return false;
     } else{
         document.getElementById("me").getElementsByTagName("nav")[0].style.display = "none";
         document.getElementById("me").getElementsByTagName("button")[0].style.top = "60px";
-        i++;
+        con++;
+        return false;
+    }
+}
+function slideShowNext(){
+    console.log(n);
+    if (n == 0){
+        n++;
+        document.getElementById("one").style.display = "none";
+        console.log(n);
+        document.getElementById("two").style.display = "block";
+        return false;
+    } else if (n == 1){
+        n++;
+        document.getElementById("two").style.display = "none";
+        console.log(n);
+        document.getElementById("three").style.display = "block";
+        return false;
+    } else if (n == 2){
+        n = 0;
+        document.getElementById("three").style.display = "none";
+        console.log(n);
+        document.getElementById("one").style.display = "block";
+        
+        return false;
+    }
+}
+function slideShowPrevious(){
+    console.log(n);
+    if (n == 0){
+        n = 2;
+        document.getElementById("one").style.display = "none";
+        console.log(n);
+        document.getElementById("three").style.display = "block";
+        return false;
+    } else if (n == 1){
+        n--;
+        document.getElementById("two").style.display = "none";
+        console.log(n);
+        document.getElementById("one").style.display = "block";
+        return false;
+    } else if (n == 2){
+        n--;
+        document.getElementById("three").style.display = "none";
+        console.log(n);
+        document.getElementById("two").style.display = "block";
         return false;
     }
 }
