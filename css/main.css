@@ -108,7 +108,16 @@ header div>h1{
     background: white;
 }
 #index footer{
-    
+    align-items: stretch;
+}
+#index footer a{
+    text-decoration: none;
+    color: #00beff;
+}
+#index footer a:hover{
+    text-decoration: none;
+    color: rgb(71, 0, 142);
+    transition: .5s;
 }
 #index footer div{
     min-height: 160px;
@@ -128,11 +137,24 @@ header div>h1{
     padding: 15px;
     text-align: justify;
 }
+#am footer div{
+    width: 33.33%;
+    padding: 0;
+}
 #am main{
     min-height: 617px;
 }
 #am main article h2,p{
     opacity: 1;
+}
+#am main a{
+    text-decoration: none;
+    color: #00beff;
+}
+#am main a:hover{
+    text-decoration: none;
+    color: rgb(71, 0, 142);
+    transition: .5s;
 }
 #am aside h3{
     margin: auto;
@@ -140,15 +162,34 @@ header div>h1{
 #am div>div.flex{
     align-items: stretch;
 }
+#am footer>div>img{
+    width: 100%;
+}
 #am .flex1{
     width: 74%;
 }
 #am .flex2{
-    width: 24%;
+    width: 26%;
 }
 /*Letters of Recomendation css*/
 #lor main{
+    align-items: stretch;
+}
+#lor main div{
     padding: 15px;
+    width: 50%;
+}
+#lor footer{
+    padding: 15px;
+}
+#lor footer a{
+    text-decoration: none;
+    color: #00beff;
+}
+#lor footer a:hover{
+    text-decoration: none;
+    color: rgb(71, 0, 142);
+    transition: .5s;
 }
 /*Web Projects css*/
 #wp main{
@@ -167,6 +208,26 @@ header div>h1{
 #sw main{
     padding: 15px;
     text-align: center;
+}
+#sw .next button, .previous button{
+    font-size: 40px;
+    display: block;
+    background: white;
+    border: none;
+    padding: 15px;
+}
+#sw .next{
+    position: absolute;
+    top: 50%;
+    right: 27.5%;
+}
+#sw .previous{
+    position: absolute;
+    top: 50%;
+    left: 27.5%;
+}
+#sw main>div{
+    display: none;
 }
 /*Programming Skills css*/
 #ps main article{
@@ -213,6 +274,15 @@ header div>h1{
 /*Resumé css*/
 #res main, aside{
     padding: 15px;
+}
+#res div>main a, aside a{
+    text-decoration: none;
+    color: #00beff;
+}
+#res main a:hover, aside a:hover{
+    text-decoration: none;
+    color: rgb(71, 0, 142);
+    transition: .5s;
 }
 #res .flex2{
     width: 100%;
@@ -264,6 +334,9 @@ header div>h1{
 .list-content{
     display: none;
     text-align: left;
+}
+.right{
+    text-align: right;
 }
 .flex.three div {
     width: 33.333%;
