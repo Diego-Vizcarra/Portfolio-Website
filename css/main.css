@@ -32,18 +32,6 @@ header>div{
 header div>a>img{
     width: 33%;
 }
-/*
-header div>nav{
-    display: none;
-}
-header div>button{
-    background: none;
-    border: none;
-    position: absolute;
-    right: 350px;
-    top: 60px;
-}
-*/
 header div.three div{
     text-align: left;
 }
@@ -92,6 +80,10 @@ header nav>ul>li>div>a{
 header div>nav{
     width: 100%;
     text-align: right;
+    display: block;
+}
+header div>button{
+    display: none;
 }
 header div>h1{
     width: 100%;
@@ -181,6 +173,7 @@ header div>h1{
 }
 #lor footer{
     padding: 15px;
+    width: 50%;
 }
 #lor footer a{
     text-decoration: none;
@@ -197,6 +190,15 @@ header div>h1{
 }
 #wp main article{
     padding : 15px;
+}
+#wp main a{
+    text-decoration: none;
+    color: #00beff;
+}
+#wp main a:hover{
+    text-decoration: none;
+    color: rgb(71, 0, 142);
+    transition: .5s;
 }
 #wp main div{
     width: 50%;
@@ -218,13 +220,13 @@ header div>h1{
 }
 #sw .next{
     position: absolute;
-    top: 50%;
-    right: 27.5%;
+    top: 50vh;
+    right: 25vw;
 }
 #sw .previous{
     position: absolute;
-    top: 50%;
-    left: 27.5%;
+    top: 50vh;
+    left: 25vw;
 }
 #sw main>div{
     display: none;
@@ -249,6 +251,15 @@ header div>h1{
 }
 #por footer.flex{
     align-items: stretch;
+}
+#por footer a{
+    text-decoration: none;
+    color: #00beff;
+}
+#por footer a:hover{
+    text-decoration: none;
+    color: rgb(71, 0, 142);
+    transition: .5s;
 }
 /*Contact css*/
 #con main{
@@ -340,4 +351,19 @@ header div>h1{
 }
 .flex.three div {
     width: 33.333%;
+}
+@media screen and (max-width: 1024px) and (min-width: 481px){
+    
+header div>nav{
+    display: none;
+}
+header div>button{
+    background: none;
+    border: none;
+    display: block;
+    z-index: 2;
+    position: absolute;
+    right: 4vw;
+    top: 5vh;
+}
 }
